@@ -1,5 +1,3 @@
-# # ADD CS50 PROBLEMS TO CODING CHALLENGES - GET CREDIT FOR THAT C KNOWLEDGE
-
 # Question:
 # A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and 
 # RIGHT with a given steps. The trace of robot movement is shown as the following:
@@ -16,10 +14,6 @@
 # RIGHT 2
 # Then, the output of the program should be:
 # 2
-
-# need to change the directional strings into 0's for the tuple and change the number to an int
-# need to determine which numbers will be negative (up adds to the value, down subtracts)
-# add equation a^2 + b^2 = c^2 to determine the distance, set as int (solving for c - up/down is a and left/right is b)
 
 import math
 directions = []

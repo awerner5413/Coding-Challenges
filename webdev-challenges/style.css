@@ -21,3 +21,7 @@
 .done {
   text-decoration: line-through;
 }
+
+body {
+  background: linear-gradient(to right, red, yellow);
+}

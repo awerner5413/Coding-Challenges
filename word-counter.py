@@ -17,15 +17,11 @@
 # to:1
 
 sentence = input().split(' ')
-countList = {}
+sentence.sort()
 
+countList = {}
 for i in sentence:
     a = sentence.count(i)
     countList.update({i: a})
-
-print(countList)
-
-
-# TODO:
-# I can get the count of each item and then create a list of dictionaries and sort the list by key
-# currently provides what I want but isn't ordered and isn't printing as requested
+for x, y in countList.items():
+    print(f"{x}: {y}")

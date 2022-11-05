@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="index.html">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="steak.html">Steak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pizza.html">Pizza</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nachos.html">Nachos</a>
+            </li>
+          </ul><br>
+        <h1>Steak</h1><br>
+        
+        <div></div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwO8NLXOHMvPJTkPbV5c7N9h4BmEwhhdPy4Q&usqp=CAU"
+            alt="Steak" width="400" height="300">
+        <p></p>
+        <p>
+            Perfect steak doesn't need to be complicated or fancy - all it takes is proper planning, careful technique, and the humility to use a quality food thermometer and not this "test doneness by comparing how it feels to parts of your face" bullshit.
+        </p>
+        <p>
+            I'll teach you how to take a few simple, common ingredients to make an impressive dish.
+        </p>
+        <div class="intro">
+            <h2> Ingredients </h2>
+            <table class="table table-bordered border-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Unit</th>
+                    <th scope="col">Ingredient</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="steak"></td>
+                    <td>oz.</td>
+                    <td>Steak (any cut)</td>
+                  </tr>
+                  <tr>
+                    <td id="salt"></td>
+                    <td>tbsp.</td>
+                    <td class="ing">Kosher Salt</td>
+                  </tr>
+                  <tr>
+                    <td id="pepper"></td>
+                    <td>tsp.</td>
+                    <td class="ing">Black Pepper</td>
+                  </tr>
+                  <tr>
+                    <td id="butter"></td>
+                    <td>tbsp.</td>
+                    <td class="ing">Butter</td>
+                  </tr>
+                  <tr>
+                    <td id="garlic"></td>
+                    <td>cloves</td>
+                    <td class="ing">Garlic</td>
+                  </tr>
+                  <tr>
+                    <td id="rosemary"></td>
+                    <td>sprigs</td>
+                    <td class="ing">Rosemary</td>
+                  </tr>
+                  <tr>
+                    <td id="oil"></td>
+                    <td>tbsp.</td>
+                    <td class="ing">cooking oil</td>
+                  </tr>
+                </tbody>
+              </table>
+            <h2> Servings: </h2>
+              <input type="number" id="servings">
+              <button id="update" onclick="update(amounts)">Update</button>
+                <script>
+                    // Declare amount variables
+                    const amounts = [16, 1, 1, 2, 2, 2, 1];
+                    document.getElementById("steak").innerHTML = amounts[0];
+                    document.getElementById("salt").innerHTML = amounts[1];
+                    document.getElementById("pepper").innerHTML = amounts[2];
+                    document.getElementById("butter").innerHTML = amounts[3];
+                    document.getElementById("garlic").innerHTML = amounts[4];
+                    document.getElementById("rosemary").innerHTML = amounts[5];
+                    document.getElementById("oil").innerHTML = amounts[6];
+
+                    // adjust the ingredient amounts based on serving size
+                    function update(amounts)
+                    {
+                      for(i = 0; i < amounts.length; i++)
+                      {
+                        var servings = document.getElementById("servings").value;
+                        amounts[i] = amounts[i] * servings;
+                      }
+                      document.getElementById("steak").innerHTML = amounts[0];
+                      document.getElementById("salt").innerHTML = amounts[1];
+                      document.getElementById("pepper").innerHTML = amounts[2];
+                      document.getElementById("butter").innerHTML = amounts[3];
+                      document.getElementById("garlic").innerHTML = amounts[4];
+                      document.getElementById("rosemary").innerHTML = amounts[5];
+                      document.getElementById("oil").innerHTML = amounts[6];
+                    }
+                </script>
+            <p></p><br>
+            <h2> Method </h2>
+              <ol>
+                <li>Unwrap your steak (I recommend New York Strip or Filet for ease of cooking due to general uniformity of size and shape) and cover with salt and pepper. If cooking within a few hours, leave steak sitting out. If cooking the next day, let the steak rest in the fridge and then set out 2-3 hours before cooking to let it reach room temperature (this is for quicker, more even cooking).</li>
+                <li>Once you are ready to cook, set out your butter to warm up and crush your garlic cloves. The steak cooks quick and you want all ingredients ready to go so you don't overcook the steak like some amateur jackass.</li>
+                <li>Pre-heat a skillet to medium-high heat for 2-3 minutes and then add your cooking oil. Pat the surface of your steak dry with a towel to remove all moisture or else the moisture will react with the hot oil and make you and your steak look like lepers.</li>
+                <li>Place the steak in the pan and press down (with tongs if your smart or your hand if you're feeling adventerous) so the whole surface is in contact with the pan to ensure as much browning as possible (brown = flavor). Wait ~2 minutes and then flip to the other side.</li>
+                <li>After the steak has cooked ~1 minute on the second side, add the butter to the pan. Let the butter melt and then add your garlic and rosemary and, using a spoon (no hand adventures this time) baste the entire surface of your steak.</li>
+                <li>Flip the steak and baste the other side and start temping by inserting the probe into the middle of the thickest part of the steak or just in the middle if you got a uniform cut like I told you to.</li>
+                <li>If you aren't a clown, you'll want to remove the steak when it reads 120-125 degrees Farenheit, which is medium doneness. If, however, you got to this step and realized you should have read all of the instructions before starting to cook, you can enjoy chewing on your rubbery piece of jerky like the dunce you are. Try harder next time.</li>
+                <li>Once you've reached your desired temp (or decide to panic because you aren't sure) place the steak on a plate or cutting board and pour the contents of the pan (rosemary, garlic and all) over the steak and let it rest for 5-7 minutes. This allows the meat to re-absorb the juices and flavorful fat.</li>
+                <li>Slice that bad boy open and bite into that masterpiece of meat you just created. Serve with the potatoes of your choice. Or don't. I don't really care.</li>
+              </ol>
+        </div>
+    </body>
+</html>

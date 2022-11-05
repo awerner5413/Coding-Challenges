@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What kind of bear is best?</h3>
+                    <button id="Polar">Polar</button>
+                    <button id="Two">There are basically two schools of thought...</button>
+                    <button id="Black">Black Bear</button>
+                <h3 id="check1"></h3>
+                    <script>
+                        document.querySelector('#Polar').addEventListener('click', function()
+                        {
+                            Polar.style.backgroundColor = 'red';
+                            document.querySelector('#check1').innerHTML = 'Incorrect...';
+                        });
+
+                        document.querySelector('#Two').addEventListener('click', function() {
+                            Two.style.backgroundColor = 'red';
+                            document.querySelector('#check1').innerHTML = 'Incorrect...';
+                        });
+
+                        document.querySelector('#Black').addEventListener('click', function() {
+                            Black.style.backgroundColor = 'green';
+                            document.querySelector('#check1').innerHTML = 'Correct!';
+                        });
+                    </script>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the first name of the person who asks Dwight 'which bear is best?'?</h3>
+                <input type="text" id="user_answer"><br>
+                <label for="user_answer">Answer:</label><br>
+                <button id="confirm">Confirm</button>
+                <h3 id="check2"></h3>
+                <script>
+
+                    document.querySelector('#confirm').addEventListener('click', function(){
+                        let answer = document.querySelector('#user_answer');
+                        if (answer.value === "Jim")
+                        {
+                            document.querySelector('#check2').innerHTML = 'Correct!';
+                            answer.style.backgroundColor = 'green';
+                        }
+                        else
+                        {
+                            document.querySelector('#check2').innerHTML = 'Incorrect...';
+                            answer.style.backgroundColor = 'red';
+                        }
+                    })
+
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+body
+{
+    /* OG Cyan #0dcaf0 */
+    background-color: #ffea97;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    padding: 1rem 5rem;
+}
+
+ol
+{
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.table
+{
+    font-size: 75%;
+}
+
+.intro
+{
+    background-color: #ffea97;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2;
+    margin: 0;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+ul
+{
+    background-color: #8d959d;
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+}
+
+.nav-link
+{
+    color: black;
+}
+
+li a
+{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+li a:hover
+{
+    display: inline;
+    background-color: black;
+    color: white;
+}

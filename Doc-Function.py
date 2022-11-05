@@ -6,10 +6,10 @@
 # Hints:
 # The built-in document method is __doc__
 
-def multBy10(num):
+def multBy10(a):
     """This program will take a given number and multiply it by 10"""
-    a = num * 10
-    return a
+    b = a * 10
+    return b
 
 num = int(input("Give me a number: "))
 
